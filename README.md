@@ -25,19 +25,19 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Load data from Excel file
+**Load data from Excel file**
 x = '/home/kavya/Documents/Population..xlsx'
 df = pd.read_excel(x)
 
-# Display first 10 rows of specific columns
+**Display first 10 rows of specific columns**
 particular_column = df[['Age', 'Gender']]
 print(particular_column.head(10))
 
-# Configure pandas to display all rows and columns
+ **Configure pandas to display all rows and columns**
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 
-# Bar chart visualization
+## Bar chart visualization##
 age_data = df['Age']
 gender_data = df['Gender']
 plt.xlabel('Gender')
