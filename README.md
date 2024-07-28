@@ -37,7 +37,7 @@ print(particular_column.head(10))
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 
-## Bar chart visualization##
+## Bar chart visualization
 age_data = df['Age']
 gender_data = df['Gender']
 plt.xlabel('Gender')
